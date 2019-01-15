@@ -1,5 +1,5 @@
 # webBART
-Web version of the Balloon Analogue Risk Task, with modifications for non-monetary data collection
+Web version of the Balloon Analogue Risk Task, with modifications for non-monetary data collection and added feature for visualizing an updated opponent's performance at each round.
 
 ## To run:
 1. Open terminal window
