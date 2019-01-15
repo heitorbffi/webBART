@@ -1,0 +1,160 @@
+body {
+  font-family: "Arial Narrow", sans-serif;
+}
+
+button {
+  font-family: inherit;
+  font-size: 14pt;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  width: 25%;
+}
+
+fieldset, #instructions, #buttons, #balloon_parts, #participated, #ending {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body, #score, .round_paragraph {
+  margin: 0px;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+#score_info, #form, #instructions_title, #balloon_parts, #another_round, #ending {
+  text-align: center;
+}
+
+#instructions {
+  background-color: WhiteSmoke;
+  text-align: left;
+  border: 1px solid #dad9d4;
+  margin-bottom: 20px;
+  width: 55%;
+  padding: 10px;
+}
+
+#small_print {
+  font-size: 11pt;
+}
+
+#buttons {
+  margin-top: 25px;
+  width: 15%;
+  justify-content: space-around;
+}
+
+#HUD, #another_round, #balloon_parts {
+  position: absolute;
+}
+
+#balloon_parts {
+  width: 100%;
+  bottom: 0;
+}
+
+#score {
+  font-size: 30pt;
+  color: #285C95;
+}
+
+#display {
+  height: 300px;
+  position: relative;
+}
+
+#balloon_top {
+  width: 75px;
+  height: 75px;
+  mix-blend-mode: multiply;
+}
+
+#HUD {
+  width: 280px;
+  height: 150px;
+  color: white;
+  top:0;
+  right:0;
+  font-size: 15pt;
+}
+
+#another_round {
+  font-size: 20pt;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -100px;
+  width: 200px;
+  height: 30px;
+}
+
+#participated {
+  width: 60%;
+}
+
+#participated, #buttons {
+  margin-top: 25px;
+}
+
+#submit_form {
+  margin-bottom: 20px;
+}
+
+#submission_status {
+  color: red;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+#ending {
+  width: 50%;
+  margin-top: 40px;
+  border: 2px solid #dad9d4;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+#buttons, .buttonsDiv {
+  display: flex;
+}
+
+.hud_paragraph {
+  background-color: grey;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.points {
+  color: gold;
+}
+
+.round_paragraph, .round_button {
+  background-color: black;
+}
+
+.round_paragraph {
+  height: 30px;
+}
+
+.round_button {
+  color: white;
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>The Balloon Interactive Task</title>
+
+    <link href="https://mbtskoudsalg.com/images/burst-transparent-8-bit-5.png" rel="shortcut icon" type="image/png"/>
+    <link href="bart.css" rel="stylesheet" type="text/css" />
+    <script src="bart.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="form">
+      <div id="personal_info">
+        <fieldset>
+          <legend>Your identifying information</legend>
+          <div>
+            <input id="clinic" type="text" size="10" placeholder="Clinic name"/>
+            <input id="id" type="text" size="10" placeholder="Patient ID"/>
+            <p id="small_print"> * Do not enter your name if you are not sure what your ID is.
+              Participation in this tool is confidential!</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="UI">
+          <legend>Therapy session last completed:</legend>
+          <select id="session">
+            <option value="1" selected="selected">1st</option>
+            <option value="2">4th</option>
+            <option value="3">7th</option>
+            <option value="4">10th</option>
+            <option value="5">12th</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <div id="instructions">
+        <h3 id="instructions_title">Instructions</h3>
+        <p>The objective of this game is to get the largest number of points
+          by pumping balloons.
+        </p>
+        <p>You will see one balloon at a time on the screen, which you can pump
+          as many times as you want, or stop whenever you want. Each pump adds 10 points to the
+          balloon.
+        </p>
+        <p>The more you pump, the more points you get. But the more you pump,
+          the higher the chance that it will explode.
+        </p>
+        <p>If a balloon explodes, you lose all points you were accumulating from it.
+          Whereas if you stop pumping (clicking the button "Stop"), you accumulate all points you
+          got from the balloon so far.
+        </p>
+        <p>You can see on the top right corner of the screen how many points you got so far (that is, points
+          you accumulated in previous rounds), how many you lost in previous rounds, and how many a competitor
+          accumulated by the end of the current round.
+        </p>
+        <p>Try to do better than the competitor!
+        </p>
+        <p>After 12 rounds, the game is over. Come back in 2 weeks!
+        </p>
+      </div>
+      <button id="submit_form">Submit form and go to the game!</button>
+      <p id="submission_status"></p>
+    </div>
+
+    <div id="game">
+      <div id="HUD">
+        <p class="hud_paragraph">Points won so far: <span id="won" class="points"></span></p>
+        <p class="hud_paragraph">Points lost so far: <span id="lost" class="points"></span></p>
+        <p class="hud_paragraph">Points won by competitor by end of this round: <span id="competitor_points" class="points">0</span></p>
+      </div>
+
+      <div id="score_info">
+        <h2 id="scoreMessage">Current score:</h2>
+        <p id="score"></p>
+      </div>
+
+      <div id="display">
+        <div id="balloon_parts">
+          <div><img src="balloon_top.png" alt="Balloon" id="balloon_top"/></div>
+          <div><img src="balloon_bottom.png" alt="Balloon" id="balloon_bottom"/></div>
+        </div>
+      </div>
+
+      <div id="buttons">
+        <button id="pump">Pump</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+
+    <div id="ending">
+      <h3>Your final scores today:</h3>
+      <p id="finalWon">Points won: </p>
+      <p id="finalLost">Points lost: </p>
+      <p>Thanks for participating! Have a great day!</p>
+    </div>
+
+    <div id="participated">
+      <p>You have already participated this week! Instead of blowing more balloons,
+      how about having friends over for a barbecue, going antique shopping, or sitting
+      at your grandma's piano for a while to practice a bit?</p>
+      <p>Just some ideas...</p>
+      <p><strong>Have a worthwhile day, and please come back in 2 weeks.</strong> We'll have
+      more balloons ready for you by then.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "webbart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Heitor B. F. Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
